@@ -1,0 +1,74 @@
+{
+    "version": 1,
+    "letters": [
+        {
+            "id": "2024_01_04_welcome",
+            "deleted": false,
+            "created_at": "2024-01-04",
+            "expires": null,
+            "title": {
+                "ru": "Добро пожаловать!",
+                "en": "Welcome!",
+                "de": "Willkommen!",
+                "es": "¡Bienvenido!",
+                "tr": "Hoş geldiniz!"
+            },
+            "body": {
+                "ru": "Спасибо что играете в Big Quiz! Вот вам подарок.",
+                "en": "Thank you for playing Big Quiz! Here's a gift for you.",
+                "de": "Danke, dass Sie Big Quiz spielen! Hier ist ein Geschenk.",
+                "es": "¡Gracias por jugar Big Quiz! Aquí tienes un regalo.",
+                "tr": "Big Quiz oynadığınız için teşekkürler! İşte size bir hediye."
+            },
+            "reward": {
+                "type": "coins",
+                "amount": 100
+            }
+        },
+        {
+            "id": "2024_01_05_event",
+            "deleted": false,
+            "created_at": "2024-01-05",
+            "expires": "2024-02-01",
+            "title": {
+                "ru": "Зимнее событие!",
+                "en": "Winter Event!",
+                "de": "Winterereignis!",
+                "es": "¡Evento de invierno!",
+                "tr": "Kış Etkinliği!"
+            },
+            "body": {
+                "ru": "Праздничный бонус! Успей забрать до конца января.",
+                "en": "Holiday bonus! Claim before the end of January.",
+                "de": "Feiertagsbonus! Holen Sie sich ihn bis Ende Januar.",
+                "es": "¡Bono festivo! Reclámalo antes de fin de enero.",
+                "tr": "Tatil bonusu! Ocak sonuna kadar alın."
+            },
+            "reward": {
+                "type": "coins",
+                "amount": 500
+            }
+        },
+        {
+            "id": "2024_01_10_announcement",
+            "deleted": false,
+            "created_at": "2024-01-10",
+            "expires": null,
+            "title": {
+                "ru": "Новые уровни!",
+                "en": "New Levels!",
+                "de": "Neue Level!",
+                "es": "¡Nuevos niveles!",
+                "tr": "Yeni Seviyeler!"
+            },
+            "body": {
+                "ru": "Мы добавили 50 новых вопросов. Приятной игры!",
+                "en": "We've added 50 new questions. Enjoy!",
+                "de": "Wir haben 50 neue Fragen hinzugefügt. Viel Spaß!",
+                "es": "Hemos añadido 50 nuevas preguntas. ¡Disfruta!",
+                "tr": "50 yeni soru ekledik. İyi oyunlar!"
+            },
+            "reward": null
+        }
+    ]
+}
