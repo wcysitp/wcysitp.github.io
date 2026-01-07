@@ -72,27 +72,6 @@
                 "type": "coins",
                 "amount": 500
             }
-        },
-        {
-            "id": "2024_01_10_announcement",
-            "deleted": false,
-            "created_at": "2025-12-31",
-            "expires": null,
-            "title": {
-                "ru": "Новые уровни!",
-                "en": "New Levels!",
-                "de": "Neue Level!",
-                "es": "¡Nuevos niveles!",
-                "tr": "Yeni Seviyeler!"
-            },
-            "body": {
-                "ru": "Мы добавили 50 новых вопросов. Приятной игры!",
-                "en": "We've added 50 new questions. Enjoy!",
-                "de": "Wir haben 50 neue Fragen hinzugefügt. Viel Spaß!",
-                "es": "Hemos añadido 50 nuevas preguntas. ¡Disfruta!",
-                "tr": "50 yeni soru ekledik. İyi oyunlar!"
-            },
-            "reward": null
         }
     ]
 }
