@@ -1,18 +1,175 @@
----
-layout: default
----
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Инди-разработчик казуальных игр: сканворды, кроссворды, филворды, викторины и головоломки для Android и веб-платформ.">
+  <title>wcysitp — казуальные игры</title>
+  <style>
+    :root {
+      --bg: #faf8f4;
+      --card: #ffffff;
+      --text: #23201b;
+      --muted: #6f6a61;
+      --line: #e7e2d8;
+      --accent: #8a5a1f;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #17150f;
+        --card: #201d16;
+        --text: #ece7dd;
+        --muted: #a49d8f;
+        --line: #322e24;
+        --accent: #d9a75f;
+      }
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--text);
+      font-family: -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+      line-height: 1.6;
+    }
+    .wrap {
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 56px 20px 40px;
+    }
+    header h1 {
+      margin: 0 0 6px;
+      font-size: 2.1rem;
+      letter-spacing: 0.5px;
+    }
+    header p.tagline {
+      margin: 0;
+      color: var(--muted);
+      font-size: 1.08rem;
+    }
+    .about {
+      margin: 28px 0 40px;
+      font-size: 1.02rem;
+    }
+    h2 {
+      font-size: 1.15rem;
+      text-transform: uppercase;
+      letter-spacing: 1.5px;
+      color: var(--muted);
+      margin: 0 0 16px;
+      font-weight: 600;
+    }
+    .games { display: grid; gap: 12px; }
+    .game {
+      background: var(--card);
+      border: 1px solid var(--line);
+      border-radius: 12px;
+      padding: 16px 18px;
+      display: flex;
+      align-items: baseline;
+      justify-content: space-between;
+      gap: 12px;
+      flex-wrap: wrap;
+    }
+    .game .name { font-weight: 600; font-size: 1.05rem; }
+    .game .genre { color: var(--muted); font-size: 0.92rem; display: block; }
+    .game .stores { white-space: nowrap; }
+    .game .stores a {
+      color: var(--accent);
+      text-decoration: none;
+      font-size: 0.95rem;
+      margin-left: 14px;
+      border-bottom: 1px solid transparent;
+    }
+    .game .stores a:first-child { margin-left: 0; }
+    .game .stores a:hover { border-bottom-color: var(--accent); }
+    .note {
+      margin: 20px 0 0;
+      color: var(--muted);
+      font-size: 0.95rem;
+    }
+    footer {
+      margin-top: 48px;
+      padding-top: 20px;
+      border-top: 1px solid var(--line);
+      color: var(--muted);
+      font-size: 0.92rem;
+    }
+    footer a { color: var(--accent); text-decoration: none; }
+    footer a:hover { text-decoration: underline; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <h1>wcysitp</h1>
+      <p class="tagline">Разработка казуальных игр</p>
+    </header>
 
-<div class="posts">
-  {% for post in site.posts %}
-    <article class="post">
+    <p class="about">
+      Делаю игры со словами и викторины — сканворды, кроссворды, филворды,
+      головоломки. Спокойные игры без спешки: понятные правила, крупный
+      текст, можно играть без интернета.
+    </p>
 
-      <h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
-
-      <div class="entry">
-        {{ post.excerpt }}
+    <section>
+      <h2>Игры</h2>
+      <div class="games">
+        <div class="game">
+          <div>
+            <span class="name">Сканворды и Кроссворды: Коробка Слов</span>
+            <span class="genre">Словесная головоломка</span>
+          </div>
+          <div class="stores">
+            <a href="https://play.google.com/store/apps/details?id=com.wcysitp.crosswordbox">Google Play</a>
+            <a href="https://www.rustore.ru/catalog/app/com.wcysitp.crosswordbox">RuStore</a>
+          </div>
+        </div>
+        <div class="game">
+          <div>
+            <span class="name">Филворды: поиск слов</span>
+            <span class="genre">Словесная головоломка</span>
+          </div>
+          <div class="stores">
+            <a href="https://www.rustore.ru/catalog/app/com.wcysitp.fillwords">RuStore</a>
+          </div>
+        </div>
+        <div class="game">
+          <div>
+            <span class="name">Крылатые фразы: угадай советское кино</span>
+            <span class="genre">Викторина</span>
+          </div>
+          <div class="stores">
+            <a href="https://www.rustore.ru/catalog/app/com.wcysitp.quizfrazy">RuStore</a>
+          </div>
+        </div>
+        <div class="game">
+          <div>
+            <span class="name">Холст: Угадай художника</span>
+            <span class="genre">Викторина</span>
+          </div>
+          <div class="stores">
+            <a href="https://www.rustore.ru/catalog/app/com.wcysitp.quizpaintings">RuStore</a>
+          </div>
+        </div>
+        <div class="game">
+          <div>
+            <span class="name">Злые Рыцари: Рогатка и Осада Замков</span>
+            <span class="genre">Аркада</span>
+          </div>
+          <div class="stores">
+            <a href="https://www.rustore.ru/catalog/app/com.wcysitp.AngryHeroes">RuStore</a>
+          </div>
+        </div>
       </div>
+      <p class="note">Игры также выходят на Яндекс Играх и других веб-платформах.</p>
+    </section>
 
-      <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a>
-    </article>
-  {% endfor %}
-</div>
+    <footer>
+      Контакт: <a href="mailto:wcysitp@gmail.com">wcysitp@gmail.com</a>
+      &nbsp;·&nbsp;
+      <a href="/app-ads.txt">app-ads.txt</a>
+    </footer>
+  </div>
+</body>
+</html>
