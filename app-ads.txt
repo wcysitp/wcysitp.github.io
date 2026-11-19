@@ -179,3 +179,7 @@ orbrx.ai, 8000869124, RESELLER
 appodeal.com, 261523, DIRECT
 bidmachine.io, 1, DIRECT
 bidmachine.io, 466, DIRECT
+
+# AppLovin via Appodeal
+applovin.com, 5c72b49c2b2ce6949bf0f98eafe9e417, RESELLER
+applovin.com, a97e4a2a60836795b8e1433cefd17f30, RESELLER
