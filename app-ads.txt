@@ -183,3 +183,7 @@ bidmachine.io, 466, DIRECT
 # AppLovin via Appodeal
 applovin.com, 5c72b49c2b2ce6949bf0f98eafe9e417, RESELLER
 applovin.com, a97e4a2a60836795b8e1433cefd17f30, RESELLER
+
+# Liftoff Monetize / Vungle via Appodeal
+liftoff.io, 7f6945815e6, RESELLER
+vungle.com, 561e8d956b8d90f61a003219, RESELLER, c107d686becd2d77
